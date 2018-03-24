@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38CB8B18-3C85-4C59-9E59-7A2EC3877824}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_2017_BS_project9</RootNamespace>
+    <AssemblyName>2017_BS_project9</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Winform.Metroframework.1.4.0\lib\net20\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Objects\Course.cs" />
+    <Compile Include="Classes\Objects\Curriculum.cs" />
+    <Compile Include="Classes\Objects\Room.cs" />
+    <Compile Include="Classes\Users\Hous-Keeper.cs" />
+    <Compile Include="Classes\Users\Head-Of-Dep.cs" />
+    <Compile Include="Classes\Users\Lecturer.cs" />
+    <Compile Include="Classes\Users\Practitioner.cs" />
+    <Compile Include="Classes\Users\Secretary.cs" />
+    <Compile Include="Classes\Users\StaffMemeber.cs" />
+    <Compile Include="Classes\Objects\Event.cs" />
+    <Compile Include="Classes\Users\Student.cs" />
+    <Compile Include="Forms\Grids\Controlers\dayGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Grids\Controlers\dayGrid.Designer.cs">
+      <DependentUpon>dayGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\FacebookButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\secretary_junction_from.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\secretary_junction_from.Designer.cs">
+      <DependentUpon>secretary_junction_from.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\Adding_Lecture_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\Adding_Lecture_Form.Designer.cs">
+      <DependentUpon>Adding_Lecture_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\Adding_PracticeLab_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\Adding_PracticeLab_Form.Designer.cs">
+      <DependentUpon>Adding_PracticeLab_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\Adding_User_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\Adding_User_Form.Designer.cs">
+      <DependentUpon>Adding_User_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lecturer\ChoosePrcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lecturer\ChoosePrcForm.Designer.cs">
+      <DependentUpon>ChoosePrcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lecturer\Class_Req_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lecturer\Class_Req_Form.Designer.cs">
+      <DependentUpon>Class_Req_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lecturer\Constraines_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lecturer\Constraines_Form.Designer.cs">
+      <DependentUpon>Constraines_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\Deleting_LecturerPractitioner_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\Deleting_LecturerPractitioner_Form.Designer.cs">
+      <DependentUpon>Deleting_LecturerPractitioner_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HOD\Add_new_course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HOD\Add_new_course.Designer.cs">
+      <DependentUpon>Add_new_course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HOD\Enter_courses_or_pre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HOD\Enter_courses_or_pre.Designer.cs">
+      <DependentUpon>Enter_courses_or_pre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HOD\Set_pres_courses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HOD\Set_pres_courses.Designer.cs">
+      <DependentUpon>Set_pres_courses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HOD\Work_Hours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HOD\Work_Hours.Designer.cs">
+      <DependentUpon>Work_Hours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\lecturer-control-panel-form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\lecturer-control-panel-form.Designer.cs">
+      <DependentUpon>lecturer-control-panel-form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lecturer\Limit_Student_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lecturer\Limit_Student_Form.Designer.cs">
+      <DependentUpon>Limit_Student_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Utils\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Utils\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\practitioner-control-panel-form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\practitioner-control-panel-form.Designer.cs">
+      <DependentUpon>practitioner-control-panel-form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\SearchForSubstitute_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\SearchForSubstitute_Form.Designer.cs">
+      <DependentUpon>SearchForSubstitute_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\Searching_Filtering_Lectures_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\Searching_Filtering_Lectures_Form.Designer.cs">
+      <DependentUpon>Searching_Filtering_Lectures_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\Searching_Filtering_Practices_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\Searching_Filtering_Practices_Form.Designer.cs">
+      <DependentUpon>Searching_Filtering_Practices_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\Search_Class_By_Type_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\Search_Class_By_Type_Form.Designer.cs">
+      <DependentUpon>Search_Class_By_Type_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\Secretary_Change_Class_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\Secretary_Change_Class_Form.Designer.cs">
+      <DependentUpon>Secretary_Change_Class_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\Secretary_Change_Lec_Pra_Time_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\Secretary_Change_Lec_Pra_Time_Form.Designer.cs">
+      <DependentUpon>Secretary_Change_Lec_Pra_Time_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\secretary-schedule-staff-menu-form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\secretary-schedule-staff-menu-form.Designer.cs">
+      <DependentUpon>secretary-schedule-staff-menu-form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\Secretary_Show_Available_Classes_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\Secretary_Show_Available_Classes_Form.Designer.cs">
+      <DependentUpon>Secretary_Show_Available_Classes_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\Secretary_Show_Lecturer_Practitioner_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\Secretary_Show_Lecturer_Practitioner_Form.Designer.cs">
+      <DependentUpon>Secretary_Show_Lecturer_Practitioner_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\SeeAvailableHoursForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\SeeAvailableHoursForm.Designer.cs">
+      <DependentUpon>SeeAvailableHoursForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Grids\StudentConstrains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Grids\StudentConstrains.designer.cs">
+      <DependentUpon>StudentConstrains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lecturer\ScheduleDayView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lecturer\ScheduleDayView.Designer.cs">
+      <DependentUpon>ScheduleDayView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Grids\ScheduleWeekView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Grids\ScheduleWeekView.designer.cs">
+      <DependentUpon>ScheduleWeekView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Grids\StudentScheduler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Grids\StudentScheduler.designer.cs">
+      <DependentUpon>StudentScheduler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\CourseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\CourseDetails.Designer.cs">
+      <DependentUpon>CourseDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\CoursesInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\CoursesInfo.Designer.cs">
+      <DependentUpon>CoursesInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Lecturer\CreateCurri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Lecturer\CreateCurri.Designer.cs">
+      <DependentUpon>CreateCurri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\DeleteStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\DeleteStudent.Designer.cs">
+      <DependentUpon>DeleteStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\SetStudentSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\SetStudentSchedule.Designer.cs">
+      <DependentUpon>SetStudentSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\PassStudentCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\PassStudentCourse.Designer.cs">
+      <DependentUpon>PassStudentCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\EventButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\CurriculumsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\CurriculumsList.Designer.cs">
+      <DependentUpon>CurriculumsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Utils\StaffInfoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Utils\StaffInfoView.Designer.cs">
+      <DependentUpon>StaffInfoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\UnderConstruction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\UnderConstruction.Designer.cs">
+      <DependentUpon>UnderConstruction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Secretary\AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Secretary\add Student Form.Designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\SqlWorker.cs" />
+    <Compile Include="Forms\Panels\hk-control-panel-form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\hk-control-panel-form.Designer.cs">
+      <DependentUpon>hk-control-panel-form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\hod-control-panel-form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\hod-control-panel-form.Designer.cs">
+      <DependentUpon>hod-control-panel-form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\secretary-schdule-students-menu-form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\secretary-schdule-students-menu-form.Designer.cs">
+      <DependentUpon>secretary-schdule-students-menu-form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Utils\UserInfoEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Utils\UserInfoEditor.Designer.cs">
+      <DependentUpon>UserInfoEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\student-control-panel-form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\student-control-panel-form.designer.cs">
+      <DependentUpon>student-control-panel-form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\Users\User.cs" />
+    <Compile Include="Tools\Globals.cs" />
+    <Compile Include="Forms\Grids\Controlers\weekGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Grids\Controlers\weekGrid.Designer.cs">
+      <DependentUpon>weekGrid.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Grids\Controlers\dayGrid.resx">
+      <DependentUpon>dayGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\secretary_junction_from.resx">
+      <DependentUpon>secretary_junction_from.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\Adding_Lecture_Form.resx">
+      <DependentUpon>Adding_Lecture_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\Adding_PracticeLab_Form.resx">
+      <DependentUpon>Adding_PracticeLab_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\Adding_User_Form.resx">
+      <DependentUpon>Adding_User_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lecturer\ChoosePrcForm.resx">
+      <DependentUpon>ChoosePrcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lecturer\Class_Req_Form.resx">
+      <DependentUpon>Class_Req_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lecturer\Constraines_Form.resx">
+      <DependentUpon>Constraines_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\Deleting_LecturerPractitioner_Form.resx">
+      <DependentUpon>Deleting_LecturerPractitioner_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HOD\Add_new_course.resx">
+      <DependentUpon>Add_new_course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HOD\Enter_courses_or_pre.resx">
+      <DependentUpon>Enter_courses_or_pre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HOD\Set_pres_courses.resx">
+      <DependentUpon>Set_pres_courses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HOD\Work_Hours.resx">
+      <DependentUpon>Work_Hours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\lecturer-control-panel-form.resx">
+      <DependentUpon>lecturer-control-panel-form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lecturer\Limit_Student_Form.resx">
+      <DependentUpon>Limit_Student_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Utils\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\practitioner-control-panel-form.resx">
+      <DependentUpon>practitioner-control-panel-form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\SearchForSubstitute_Form.resx">
+      <DependentUpon>SearchForSubstitute_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\Searching_Filtering_Lectures_Form.resx">
+      <DependentUpon>Searching_Filtering_Lectures_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\Searching_Filtering_Practices_Form.resx">
+      <DependentUpon>Searching_Filtering_Practices_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\Search_Class_By_Type_Form.resx">
+      <DependentUpon>Search_Class_By_Type_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\Secretary_Change_Class_Form.resx">
+      <DependentUpon>Secretary_Change_Class_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\Secretary_Change_Lec_Pra_Time_Form.resx">
+      <DependentUpon>Secretary_Change_Lec_Pra_Time_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\secretary-schedule-staff-menu-form.resx">
+      <DependentUpon>secretary-schedule-staff-menu-form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\Secretary_Show_Available_Classes_Form.resx">
+      <DependentUpon>Secretary_Show_Available_Classes_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\Secretary_Show_Lecturer_Practitioner_Form.resx">
+      <DependentUpon>Secretary_Show_Lecturer_Practitioner_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\SeeAvailableHoursForm.resx">
+      <DependentUpon>SeeAvailableHoursForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Grids\StudentConstrains.resx">
+      <DependentUpon>StudentConstrains.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lecturer\ScheduleDayView.resx">
+      <DependentUpon>ScheduleDayView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Grids\ScheduleWeekView.resx">
+      <DependentUpon>ScheduleWeekView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\hk-control-panel-form.resx">
+      <DependentUpon>hk-control-panel-form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\hod-control-panel-form.resx">
+      <DependentUpon>hod-control-panel-form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\secretary-schdule-students-menu-form.resx">
+      <DependentUpon>secretary-schdule-students-menu-form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Grids\StudentScheduler.resx">
+      <DependentUpon>StudentScheduler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\CourseDetails.resx">
+      <DependentUpon>CourseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\CoursesInfo.resx">
+      <DependentUpon>CoursesInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Lecturer\CreateCurri.resx">
+      <DependentUpon>CreateCurri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\CurriculumsList.resx">
+      <DependentUpon>CurriculumsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\DeleteStudent.resx">
+      <DependentUpon>DeleteStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\SetStudentSchedule.resx">
+      <DependentUpon>SetStudentSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\PassStudentCourse.resx">
+      <DependentUpon>PassStudentCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Utils\StaffInfoView.resx">
+      <DependentUpon>StaffInfoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\UnderConstruction.resx">
+      <DependentUpon>UnderConstruction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Secretary\add Student Form.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Utils\UserInfoEditor.resx">
+      <DependentUpon>UserInfoEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\student-control-panel-form.resx">
+      <DependentUpon>student-control-panel-form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\Grids\Controlers\weekGrid.resx">
+      <DependentUpon>weekGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

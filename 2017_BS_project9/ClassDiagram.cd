@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_2017_BS_project9.User">
+    <Position X="5.25" Y="0.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAgAAEAAAAAAQAAAAAAAAAAYAAAAAAAAA=</HashCode>
+      <FileName>Classes\Users\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Student">
+    <Position X="2" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AACICAAAAAAAAAAAAAgAAAAAAAAAABIAAAAAAAAAAEA=</HashCode>
+      <FileName>Classes\Users\Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Event">
+    <Position X="4" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>JCAAAAEAIoAAgAAEABEAAQAEIAAgAICAEAAAAAAEAAA=</HashCode>
+      <FileName>Classes\Objects\Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Course">
+    <Position X="6.5" Y="5.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAACAABBAQgBCEIAAAAARAAgAAAIAAAAIAACAAAAA=</HashCode>
+      <FileName>Classes\Objects\Course.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Head_Of_Dep">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Users\Head-Of-Dep.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Secretary">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Users\Secretary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Curriculum">
+    <Position X="9" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAgAIAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Classes\Objects\Curriculum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Room">
+    <Position X="8" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAQAAAAAAAAIAAAAAAAQCAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Classes\Objects\Room.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="6.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="_2017_BS_project9.House_keeper">
+    <Position X="14.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Users\Hous-Keeper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Lecturer">
+    <Position X="15" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Users\Lecturer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Practitioner">
+    <Position X="18.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Users\Practitioner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.StaffMemeber">
+    <Position X="17.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Classes\Users\StaffMemeber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.dayGrid" Collapsed="true">
+    <Position X="13.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controlers\dayGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.weekGrid" Collapsed="true">
+    <Position X="15.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAgACAAAAAAAACAAAACAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Controlers\weekGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.DataGridView" Collapsed="true">
+    <Position X="17.5" Y="10" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_2017_BS_project9.ScheduleDayView" Collapsed="true">
+    <Position X="25" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="_2017_BS_project9.ScheduleDayView.constraintsStruct" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Forms\Grids\ScheduleDayView.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="_2017_BS_project9.ScheduleDayView.dayStruct" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Forms\Grids\ScheduleDayView.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAICAAIACgBkHMAAACAAEACQhCAAgAAQAAAAADPjQI=</HashCode>
+      <FileName>Forms\Grids\ScheduleDayView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.ScheduleWeekView" Collapsed="true">
+    <Position X="25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAMBCAQEAIAAACBBAACAAgAkgAAAAAAAABCBAg=</HashCode>
+      <FileName>Forms\Grids\ScheduleWeekView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.StudentConstains" Collapsed="true">
+    <Position X="25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACACAAAAAACBBEACAAAAEgAAABAAAAAAAAA=</HashCode>
+      <FileName>Forms\Grids\StudentConstrains.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.StudentScheduler" Collapsed="true">
+    <Position X="25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wgsoCCAMBiAAABAEAAChBAISBYkAEhJAAAATUgCjgAs=</HashCode>
+      <FileName>Forms\Grids\StudentScheduler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MetroFramework.Forms.MetroForm" Collapsed="true">
+    <Position X="28" Y="5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_2017_BS_project9.Add_new_course" Collapsed="true">
+    <Position X="22.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgBAAAACAAIBEoAECAAAIDAAiAAAAIAAAgAAkBCEA=</HashCode>
+      <FileName>Forms\HOD\Add_new_course.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Enter_courses_or_pre" Collapsed="true">
+    <Position X="26.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAIAACAEAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Forms\HOD\Enter_courses_or_pre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Set_pres_courses" Collapsed="true">
+    <Position X="24.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAABAAAACCAABAQAACEAAACAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\HOD\Set_pres_courses.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Work_Hours" Collapsed="true">
+    <Position X="29" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAAACAICAAADCYEAGACAASAAACAAQAAAAIEAAAAQI=</HashCode>
+      <FileName>Forms\HOD\Work_Hours.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.ChoosePrcForm" Collapsed="true">
+    <Position X="20.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAACAAABAAAAjAAAACAEAIQAAABEAAAAAAAAA=</HashCode>
+      <FileName>Forms\Lecturer\ChoosePrcForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.Class_Req_Form" Collapsed="true">
+    <Position X="25.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAAAAACAAgBAAAICAAAAKAAAACAAAAAAAAACAAAA=</HashCode>
+      <FileName>Forms\Lecturer\Class_Req_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.Constraines_Form" Collapsed="true">
+    <Position X="29.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>+TkCQAAAESAAgBIAAICAgNDvAAgEEAQAAgAREAAkAAA=</HashCode>
+      <FileName>Forms\Lecturer\Constraines_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.Limit_Student_Form" Collapsed="true">
+    <Position X="23" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAADAkAACAAABABAACAAAACAAAIQAAAIEAAAACAAAA=</HashCode>
+      <FileName>Forms\Lecturer\Limit_Student_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.CreateCurri" Collapsed="true">
+    <Position X="27.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACAAAADgUAAAAAACBKCACAAAAgBAAAAAACAAgAAA=</HashCode>
+      <FileName>Forms\Lecturer\CreateCurri.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.HouseKeeperControlPanelForm" Collapsed="true">
+    <Position X="23.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADAAACggACEAIBAAICSEFEAiAAAgJUVAUgIABCABAQY=</HashCode>
+      <FileName>Forms\Panels\hk-control-panel-form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.HODControlPanelForm" Collapsed="true">
+    <Position X="25.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACBBAACAEAgAAAGABAIACABAQA=</HashCode>
+      <FileName>Forms\Panels\hod-control-panel-form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Lecturer_Form" Collapsed="true">
+    <Position X="30" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAkAACAAABgAAAGABAACAAAYAAAAIGAAAAAQARA=</HashCode>
+      <FileName>Forms\Panels\lecturer-control-panel-form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Practitioner_Form" Collapsed="true">
+    <Position X="21" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAkAACAAABAAAAGABAACAAAAAAAAIACAAAAQARA=</HashCode>
+      <FileName>Forms\Panels\practitioner-control-panel-form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.SecretarySchduleStudetnsForm" Collapsed="true">
+    <Position X="27.75" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAgAQCACAABAAIGBBAACAAAAAAAEAACAAAQAAQA=</HashCode>
+      <FileName>Forms\Panels\secretary-schdule-students-menu-form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.SecretarySchduleStaffForm" Collapsed="true">
+    <Position X="34" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAUIBAAAGEAARAEAgGARAACAEI8AlgAAFAY5IAhAQA=</HashCode>
+      <FileName>Forms\Panels\secretary-schedule-staff-menu-form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.StudentControlPanelForm" Collapsed="true">
+    <Position X="23.25" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACABAAIBgAGABAACACIAEAACAFAAAABTgQA=</HashCode>
+      <FileName>Forms\Panels\student-control-panel-form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.Adding_Lecture_Form" Collapsed="true">
+    <Position X="12.75" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAACBAABAAAICAhQACAAAQIAAAQCIgAAAAAAQ=</HashCode>
+      <FileName>Forms\Secretary\Adding_Lecture_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.Adding_PracticeLab_Form" Collapsed="true">
+    <Position X="19.25" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAggAAAgCIABBAAAICAFQACAAAAKAEAQAIiAAAAAAU=</HashCode>
+      <FileName>Forms\Secretary\Adding_PracticeLab_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.Adding_User_Form" Collapsed="true">
+    <Position X="28.25" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAIJAEAAiICQACAAAAAAAAAQCAIAAAAAQ=</HashCode>
+      <FileName>Forms\Secretary\Adding_User_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.Deleting_LecturerPractitioner_Form" Collapsed="true">
+    <Position X="17.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAACAEggAQAAiAAAACAAAMAgAAAECAAAAAAAA=</HashCode>
+      <FileName>Forms\Secretary\Deleting_LecturerPractitioner_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.Search_Class_By_Type_Form" Collapsed="true">
+    <Position X="26.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAAAgEAADAACBAEAACAAgADAAAAAEAAECiAAAggAAA=</HashCode>
+      <FileName>Forms\Secretary\Search_Class_By_Type_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.SearchForSubstitute_Form" Collapsed="true">
+    <Position X="23" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBAIQABAACEQABAAAAjAAAACAAAIAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Forms\Secretary\SearchForSubstitute_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.Searching_Filtering_Lectures_Form" Collapsed="true">
+    <Position X="21.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>chAAAAAAACAAFFAEBAGIQABGAAAAoAAAACCggACBAAA=</HashCode>
+      <FileName>Forms\Secretary\Searching_Filtering_Lectures_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.Searching_Filtering_Practices_Form" Collapsed="true">
+    <Position X="30.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8hAAAAAAGCgAFBAUBACISABGAAAAoAAAQCCggAABAAA=</HashCode>
+      <FileName>Forms\Secretary\Searching_Filtering_Practices_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.Secretary_Change_Class_Form" Collapsed="true">
+    <Position X="19.75" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAABAQAKEAgDAAAICCCQAiAAAAQEAAQAABABKYABA=</HashCode>
+      <FileName>Forms\Secretary\Secretary_Change_Class_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.Secretary_Change_Lec_Pra_Time_Form" Collapsed="true">
+    <Position X="28.75" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wEgABAQIGAAgHAAAIKCCQIiIEAgAEAAQIABABK0gDA=</HashCode>
+      <FileName>Forms\Secretary\Secretary_Change_Lec_Pra_Time_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.Secretary_Show_Available_Classes_Form" Collapsed="true">
+    <Position X="33.25" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgABAAIGEAABAAAACAAAACIAAgAAAAAAAAAAIkAAA=</HashCode>
+      <FileName>Forms\Secretary\Secretary_Show_Available_Classes_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.Secretary_Show_Lecturer_Practitioner_Form" Collapsed="true">
+    <Position X="23.75" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEgADAAIGAAABAAQkDAAAAKIAAgAAAAAAAAAAIlAAA=</HashCode>
+      <FileName>Forms\Secretary\Secretary_Show_Lecturer_Practitioner_Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Forms.SeeAvailableHoursForm" Collapsed="true">
+    <Position X="13" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAoAAAECACABAAIACAAAAKgAgoBCQEwEQQAgAQAAA=</HashCode>
+      <FileName>Forms\Secretary\SeeAvailableHoursForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.AddStudent" Collapsed="true">
+    <Position X="22" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACgCAJAAAAiBAgACAAAAAAAgAQAAAQAAAAA=</HashCode>
+      <FileName>Forms\Secretary\AddStudent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.CourseDetails" Collapsed="true">
+    <Position X="31" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACgQABAAAECAAIgCAAAAAAAEAAAABAAAAQA=</HashCode>
+      <FileName>Forms\Secretary\CourseDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.CoursesInfo" Collapsed="true">
+    <Position X="10.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACgRABEEAACAAAACAAQAgAAgAAAAAgAiAQA=</HashCode>
+      <FileName>Forms\Secretary\CoursesInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.CurriculumsList" Collapsed="true">
+    <Position X="26" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACgIABAAAACEAAACBPoBAQAAAAAAAAAgCAA=</HashCode>
+      <FileName>Forms\Secretary\CurriculumsList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.DeleteStudent" Collapsed="true">
+    <Position X="15.25" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAAAEACAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\Secretary\DeleteStudent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.PassStudentCourse" Collapsed="true">
+    <Position X="24.25" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAggCAAAACCAACAAAACAAEAABAAAAAAAAAAAAg=</HashCode>
+      <FileName>Forms\Secretary\PassStudentCourse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.secretary_junction_from" Collapsed="true">
+    <Position X="33.25" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACABAACAAAYAAACAGAAAAABAAA=</HashCode>
+      <FileName>Forms\Secretary\secretary_junction_from.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.SetStudentSchedule" Collapsed="true">
+    <Position X="17" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAAAEACAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\Secretary\SetStudentSchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Login" Collapsed="true">
+    <Position X="34.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAAgAAAAACADACCAAAAAAAAEABAAACQAQA=</HashCode>
+      <FileName>Forms\Utils\Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.StaffInfoView" Collapsed="true">
+    <Position X="38.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAgAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Forms\Utils\StaffInfoView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.UserInfoEditor" Collapsed="true">
+    <Position X="36.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACACAJAAAAiBAgACAAAAAAAgAQAQAQAgAQA=</HashCode>
+      <FileName>Forms\Utils\UserInfoEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.EventButton" Collapsed="true">
+    <Position X="2.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\EventButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.Globals" Collapsed="true">
+    <Position X="2.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEAQAAAAAhIAQAAAAAAAAAAAAAAAAoAAAAAAAAAAA=</HashCode>
+      <FileName>Tools\Globals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.SqlWorker" Collapsed="true">
+    <Position X="4.25" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAALQAAKEighAANEABAJAAAAAAAEgZAAEQIAoAgACBA=</HashCode>
+      <FileName>Tools\SqlWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_2017_BS_project9.FacebookButton" Collapsed="true">
+    <Position X="4.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAgAgAAAAAAAAAAAACAAIAAIAAAAQAQAI=</HashCode>
+      <FileName>Tools\FacebookButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Button" Collapsed="true">
+    <Position X="4.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MetroFramework.Controls.MetroTile" Collapsed="true">
+    <Position X="1.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_2017_BS_project9.Program">
+    <Position X="38.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

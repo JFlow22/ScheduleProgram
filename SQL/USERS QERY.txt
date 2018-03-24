@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[USERS] (
+    [ID]         INT  NOT NULL,
+    [NAME]       TEXT NOT NULL,
+    [PWD]        TEXT NOT NULL,
+    [TYPE] INT NULL, 
+    [SEM_NAME]   TEXT NULL,
+    [YEAR_COUNT] INT  NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC)
+);
